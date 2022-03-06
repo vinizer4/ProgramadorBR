@@ -1,0 +1,105 @@
+/* Seletores 
+
+São maneiras de selecionarmos um elemento
+
+*/
+
+/* com . selecionamos uma classe
+
+EX:
+
+.nome-da-class
+
+*/
+
+/*
+
+com # selecionamos um id
+
+EX:
+
+#nome-do-id
+
+*/
+
+/* também usamos a propria tag para selecionar um elemento 
+
+EX:
+
+p
+
+div
+
+header
+
+dessa forma alteramos tudo o que está entre a tag selecionada */
+
+/* Outras forma de selecionar elementos
+
+ * : o "*" seleciona todos os elementos de uma pagina.
+
+ */
+
+ /* Utilizando , podemos atribuir o CSS para mais de um elemento no exemplo abaixo */
+
+ .p2, h2{
+     background-color: green;
+ }
+
+
+/* Quando utilizamos dessa forma com espaco e sem a virgula ele altera os elementos que estão dentro do primeiro criterio e que atendem ao segundo criterio no caso alteramos todos os paragrafos que estão dentro de um div */
+ div p{
+     background-color: aqua;
+ }
+
+/* Nesse exemplo alteramos todos os elementos cujo pai é tem o id #head,como adicionamos um section no header que esta com id #head não alteramos essa section pois o pai desses elementos agora é a propria section */
+ #head > p{
+     background-color: rgb(187, 187, 235);
+ }
+
+ /* Utilizando o + alteramos o elemento que está logo após a id #head*/
+ header + p{
+     background-color: aquamarine;
+ }
+
+
+
+/* Utilizando o ~ alteramos todos o elementos que sucedam ao header 
+EX: */
+ header ~ p{
+    background-color: chartreuse;
+}
+
+
+/* Nesse exemplo utilizamos o atributo como seletor, colocando ele entre [], nesse exemplo alteraremos todos o elementos que tem o atributo width
+
+EX: */
+[width="500"] 
+/* usando o = podemos filtrar o atributo que seja  igual ao que definimos lembrando que não pode ter espaco e tem que ser definido como string "" */
+{
+    background-color: aqua;
+}
+
+/* Usando o ~ pegamos todos que contenham  a palavra titulo independe se não seja exatamento igual nesse exemplo pegamos o titulo 1 e titulo 2 do index.html */
+[title~="titulo"]{
+    background-color: gold;
+}
+
+/* Nesse exemplo utilizando ^ pegamos todos os itens que começam com as letras ti escolhidas como filtro 
+
+no caso alteramos todos os itens que tenha o atributo title e começa com ti */
+[title^="ti"]{
+    background-color: beige;
+}
+
+
+/* Nesse exemplo utilizando $ pegamos todos os itens que terminem com o que escolhemos como filtro no caso alteramos todos os itens que tenha o atributo title e termina em 1 */
+[title$="1"]{
+    background-color: rgb(170, 170, 53);
+}
+
+
+/* No caso do * pegamos o que tiver em qualquer lugar não sendo necessario ser no  começo ou fim */
+[title*="1"]{
+    background-color: rgb(170, 170, 53);
+}

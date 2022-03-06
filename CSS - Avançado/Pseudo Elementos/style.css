@@ -1,0 +1,64 @@
+/* Pseudo Elementos
+
+Altera somente um elemento conforme seleção
+*/
+
+/* Exemplo estamos alterando somente a primeira linha do elemento paragrafo "p"  */
+p::first-line{
+    color: red
+}
+
+/* Alteramos a primeira letra do paragrafo com "first-letter"*/
+p::first-letter{
+    color: blue
+}
+
+
+h1::first-letter{
+    color: blue;
+    font-size: 5rem;
+}
+
+/* li::before{
+    content: "A";
+    color: blue;
+    font-size: 20px;
+} */
+
+li{
+    /* margin-left: 300px;
+    list-style-image: url(./new-google-favicon-logo.png); */
+    list-style: none;
+}
+
+
+/* before altera o que vem antes do nosso elemento */
+li::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/new-google-favicon-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* after altera o que vem depois do nosso elemento*/
+li::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/new-google-favicon-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* selection altera tudo que estiver selecionado no exemplo abaixo inserimos a marcação de texto yellow e alteramos a cor do texto para orangered */
+
+p::selection{
+    background-color: yellow;
+    color: orangered;
+}

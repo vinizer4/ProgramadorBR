@@ -1,0 +1,67 @@
+/* Pseudo Classes são um estilo de seletores
+
+Conseguimos selecionar um elemento baseado em alguma caracteristica dele dependendo de outro aspecto/
+
+/* Utilizamos o pseudo classe focus para selecionar somente o elemento que está em foco */
+input:focus{
+    color: red;
+}
+
+/* Utilizamos a pseudo classe first-child para selecionar somente o primeiro filho da tag li */
+li:first-child{
+    color: blue
+}
+
+/* Nesse caso utilizamos o fist-of-type alterando o primeiro item do tipo li idenpendente sé é filho ou não */
+li:first-of-type{
+    color: blue;
+}
+
+/* Nesse caso utilizando nth-chilf(2) selecionamos o filho de numero 2 da tag li */ 
+li:nth-child(2){
+    color: aquamarine;
+}
+
+
+li:nth-of-type(2){
+    color: gold;
+}
+
+/* Nesse caso selecionamos o segunto filho de trás para a frente ou seja o pneultimo item */
+li:nth-last-child(2){
+    color: crimson;
+}
+
+/* Dessa forma selecionamos o ultimo filho 
+li:last-child */
+
+/* Dessa forma selecionamos o ultimo item de acordo com o tipo = type */
+
+li:last-of-type{
+    color: blanchedalmond;
+}
+
+/* Selecionando (2n) estaremos selecionando todos os itens que são divisiveis por 2 como no exemplo abaixo */
+li:nth-last-of-type(2n){
+    background-color: rgb(158, 158, 158);
+}
+
+li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li:nth-of-type(even){
+    background-color: beige;
+}
+
+li:nth-of-type(odd){
+    background-color: gray;
+    color: white
+}
