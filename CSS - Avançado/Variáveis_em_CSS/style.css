@@ -1,0 +1,34 @@
+/* Utilizamos variaveis no CSS para armazenar códigos para ser usados em diversos elementos, não sendo necessario alteralos item a item sendo assim alteramos somente a variavel e alteraremos todos os itens que tem essa variavel atribuida */
+
+/* Exemplo */
+
+:root{
+    /* sintaxe para criação de variavel CSS */
+    --var-color: gold;
+
+    --square-size: 200px
+}
+
+.p2{
+    color: var(--var-color);
+    font-size: 25px;
+}
+
+.p3{
+    color: var(--var-color);
+    font-size: 14px;
+}
+
+.sqr1{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: black;
+}
+
+.sqr2{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: green;
+}
+
+

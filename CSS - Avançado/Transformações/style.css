@@ -1,0 +1,14 @@
+div{
+    width: 420px;
+    height: 300px;
+    background-color: red;
+    /* transform: skew(30deg, 30deg) scale(0.7, 1) */
+}
+
+/* caniuse.com 
+
+Verifica quais versãoes são compativeis com os respectivos navegadores e seus prefixos para torna-los compativeis*/
+
+/* shouldprefix.com 
+
+Em alguns casos temos que usar prefixos para tornar nosso código  compativel com navegadores desatualizados nesses casos temos que verificar no site shouldprefix.com */
